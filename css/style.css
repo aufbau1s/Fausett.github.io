@@ -2,7 +2,7 @@
    DESIGN SYSTEM — Pixel Art / Loose RPG
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
 /* --- CSS Variables --- */
 :root {
@@ -65,7 +65,7 @@ h2 { font-size: clamp(0.75rem, 2vw, 1rem); color: var(--accent-blue); margin-bot
 h3 { font-size: 0.65rem; color: var(--text-primary); margin-bottom: 0.75rem; }
 
 .mono {
-  font-family: 'VT323', monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 1.25rem;
   color: var(--accent-green);
 }
@@ -169,7 +169,7 @@ nav {
 }
 
 .hero-tag {
-  font-family: 'VT323', monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 1.1rem;
   color: var(--accent-green);
   margin-bottom: 0.5rem;
@@ -231,16 +231,16 @@ nav {
 }
 
 .stat-label {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 0.4rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
   color: var(--text-dim);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
 .stat-value {
-  font-family: 'VT323', monospace;
-  font-size: 1.2rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
   color: var(--accent-gold);
 }
 
@@ -296,7 +296,7 @@ nav {
 }
 
 .pillar-card-tag {
-  font-family: 'VT323', monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 1rem;
   color: var(--text-dim);
   margin-top: auto;
@@ -363,8 +363,8 @@ nav {
 }
 
 .badge {
-  font-family: 'VT323', monospace;
-  font-size: 0.85rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
   padding: 0.1rem 0.5rem;
   border: 1px solid;
   white-space: nowrap;
@@ -390,8 +390,8 @@ nav {
 }
 
 .tag {
-  font-family: 'VT323', monospace;
-  font-size: 0.9rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
   color: var(--text-dim);
   background: var(--bg);
   border: 1px solid var(--border);
@@ -441,7 +441,7 @@ nav {
 }
 
 .timeline-date {
-  font-family: 'VT323', monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 1rem;
   color: var(--accent-green);
   margin-bottom: 0.25rem;
@@ -455,7 +455,7 @@ nav {
 }
 
 .timeline-org {
-  font-family: 'VT323', monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 1rem;
   color: var(--accent-gold);
   margin-bottom: 0.5rem;
@@ -504,7 +504,7 @@ footer {
 }
 
 footer p {
-  font-family: 'VT323', monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 1rem;
   color: var(--text-dim);
   margin: 0;
@@ -542,7 +542,7 @@ footer a:hover { color: var(--accent-gold); }
 .post-item:hover { background: var(--bg-card); padding-left: 0.5rem; }
 
 .post-date {
-  font-family: 'VT323', monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 1rem;
   color: var(--text-dim);
   white-space: nowrap;
