@@ -15,7 +15,7 @@
   --text-primary: #e8e4d4;
   --text-muted:   #8888aa;
   --text-dim:     #555577;
-  --accent-gold:  #f0c040;
+  --accent-gold:  #e8c97a;
   --accent-blue:  #6ab0f5;
   --accent-green: #5dbd7a;
   --accent-red:   #e05c5c;
@@ -101,8 +101,8 @@ a:hover { color: var(--accent-gold); }
   box-shadow:
     2px 0 0 0 var(--accent-gold),
     0 2px 0 0 var(--accent-gold),
-    -2px 0 0 0 #a07820,
-    0 -2px 0 0 #a07820;
+    -2px 0 0 0 #9e8540,
+    0 -2px 0 0 #9e8540;
 }
 
 /* ============================================================
