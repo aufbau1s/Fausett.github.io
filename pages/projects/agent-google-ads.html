@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Autonomous Google Ads Machine — Lewis Fausett</title>
+  <meta name="description" content="Building an AI agent that runs Google Ads campaigns end-to-end — writing, launching, monitoring, and optimizing without manual intervention." />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="../../index.html" class="nav-logo">LF<span>.</span>dev</a>
+      <ul class="nav-links">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../business.html" class="active">Business</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../thoughts.html">Thoughts</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- BREADCRUMB -->
+      <div style="margin: 1.5rem 0 0; font-family: 'VT323', monospace; font-size: 1rem; color: var(--text-dim);">
+        <a href="../business.html" style="color: var(--text-dim);">Business</a>
+        <span style="margin: 0 0.5rem;">›</span>
+        <a href="agentic-ecommerce.html" style="color: var(--text-dim);">Agentic E-Commerce</a>
+        <span style="margin: 0 0.5rem;">›</span>
+        <span style="color: var(--text-muted);">Google Ads Agent</span>
+      </div>
+
+      <!-- PAGE HEADER -->
+      <section class="hero" style="padding-bottom: 1rem;">
+        <div class="hero-tag">&gt; PROJECT :: AGENTIC MEDIA BUYING — GOOGLE</div>
+        <h1>The Autonomous Google Ads Machine</h1>
+        <p class="hero-desc">
+          An AI agent that writes, launches, monitors, and optimizes Google Ads campaigns
+          without a human in the loop. Built on the Google Ads API with an LLM decision layer —
+          running live inside Patrick Adair Designs.
+        </p>
+
+        <div class="status-bar pixel-border" style="margin-top: 1.5rem;">
+          <div class="stat">
+            <span class="stat-label">Status</span>
+            <span class="stat-value" style="color: var(--accent-green);">Active</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Platform</span>
+            <span class="stat-value">Google Ads</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Stack</span>
+            <span class="stat-value">Google Ads API · LLM · Python</span>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Parent</span>
+            <span class="stat-value"><a href="agentic-ecommerce.html" style="color: var(--accent-gold);">Agentic E-Commerce ↗</a></span>
+          </div>
+        </div>
+      </section>
+
+      <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
+
+      <!-- THE PROBLEM -->
+      <div class="section-header">
+        <span class="section-icon">🎯</span>
+        <h2>// The Problem</h2>
+      </div>
+
+      <p style="color: var(--text-muted); margin-bottom: 1rem;">
+        Running Google Ads at scale is a daily grind of repetitive decisions: which campaigns
+        to scale, which to pause, what to bid, what copy to test next. Most of this is pattern
+        matching on data — exactly what an LLM with tool access is good at.
+      </p>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+        The question is: can you build an agent that handles the full media buying loop
+        — not just reporting, but <em>acting</em> — reliably enough to trust with real budget?
+        <em style="color: var(--text-dim);">[Expand with your specific pain points at PAD that motivated this.]</em>
+      </p>
+
+      <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
+
+      <!-- THE APPROACH -->
+      <div class="section-header">
+        <span class="section-icon">🔧</span>
+        <h2>// The Approach</h2>
+      </div>
+
+      <div class="project-grid" style="margin-bottom: 1.5rem;">
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-title">1. Data Ingestion</span>
+            <span class="badge badge-active">DONE</span>
+          </div>
+          <p class="project-desc">
+            <em style="color: var(--text-dim);">[Describe how you pull campaign data — Google Ads API, what metrics, at what cadence.]</em>
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-title">2. Decision Layer</span>
+            <span class="badge badge-active">ACTIVE</span>
+          </div>
+          <p class="project-desc">
+            <em style="color: var(--text-dim);">[Describe the LLM prompt structure, tool definitions, and how the agent reasons about what to do next.]</em>
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-title">3. Execution &amp; Guardrails</span>
+            <span class="badge badge-wip">WIP</span>
+          </div>
+          <p class="project-desc">
+            <em style="color: var(--text-dim);">[Describe how actions are executed — API calls, approval thresholds, spend limits, rollback logic.]</em>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
+
+      <!-- RESULTS / LEARNINGS -->
+      <div class="section-header">
+        <span class="section-icon">📊</span>
+        <h2>// Results &amp; Learnings</h2>
+      </div>
+
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+        <em style="color: var(--text-dim);">[This is the most valuable section — what actually happened when you ran this in production? ROAS changes, time saved, failure modes, surprising behaviors. Even rough numbers are useful.]</em>
+      </p>
+
+      <div class="now-box">
+        <p><em style="color: var(--text-dim);">[Add a "current state" summary here — what's working, what's not, what you're working on next.]</em></p>
+      </div>
+
+      <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
+
+      <!-- CODE / RESOURCES -->
+      <div class="section-header">
+        <span class="section-icon">💻</span>
+        <h2>// Code &amp; Resources</h2>
+      </div>
+
+      <div class="post-list">
+        <a href="#" class="post-item">
+          <span class="post-date">GitHub</span>
+          <span class="post-title">[WIP] — Link to repo or relevant code snippets</span>
+        </a>
+        <a href="#" class="post-item">
+          <span class="post-date">Docs</span>
+          <span class="post-title">[WIP] — Google Ads API reference or relevant documentation</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        Lewis Fausett &nbsp;·&nbsp;
+        <a href="mailto:lewis@patrickadairdesigns.com">Email</a> &nbsp;·&nbsp;
+        <a href="https://github.com/aufbau1s" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp;
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+      <p style="margin-top: 0.5rem;"><span class="blink">█</span> &nbsp; Built with plain HTML/CSS · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+</body>
+</html>
