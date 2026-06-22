@@ -159,17 +159,17 @@ nav {
 
 .stat-label {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
-  color: var(--text-dim);
+  font-size: 0.65rem;
+  color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
 .stat-value {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
 }
 
 /* ── Section Headers ──────────────────────────────────────── */
