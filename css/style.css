@@ -110,7 +110,7 @@ nav {
 
 /* ── Hero ─────────────────────────────────────────────────── */
 .hero {
-  padding: 4rem 0 2.5rem;
+  padding: 4.5rem 0 2rem;
 }
 
 .hero-tag {
@@ -122,14 +122,16 @@ nav {
   margin-bottom: 1rem;
 }
 
-.hero h1 {
+.hero h1,
+.hero-hook {
   font-family: var(--font-mono);
-  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
   font-weight: 700;
   color: var(--text);
-  line-height: 1.25;
+  line-height: 1.35;
   letter-spacing: -0.03em;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  max-width: 680px;
 }
 
 .hero-desc {
@@ -137,6 +139,61 @@ nav {
   color: var(--text-muted);
   max-width: 600px;
   line-height: 1.75;
+}
+
+/* ── Now Banner ──────────────────────────────────────────── */
+.now-section {
+  padding: 0 0 1rem;
+}
+
+.now-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.1rem 1.4rem;
+  background: rgba(74, 222, 128, 0.05);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  border-radius: var(--radius);
+}
+
+.now-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-top: 0.15rem;
+}
+
+.now-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.now-text {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── Section Gap ──────────────────────────────────────────── */
+.section-gap {
+  padding: 1.5rem 0;
 }
 
 /* ── Stat Bar ─────────────────────────────────────────────── */
@@ -223,12 +280,14 @@ nav {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 1.25rem;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 }
 
 .card:hover, .project-card:hover {
-  border-color: var(--green-dim);
+  border-color: rgba(74, 222, 128, 0.3);
   background: var(--bg-hover);
+  box-shadow: 0 4px 24px rgba(74, 222, 128, 0.06);
+  transform: translateY(-2px);
 }
 
 a.card {
@@ -321,14 +380,15 @@ a.card:hover .card-arrow {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  transition: border-color 0.2s ease, background 0.2s ease, transform 0.1s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
 
 .pillar-card:hover {
-  border-color: var(--green-dim);
+  border-color: rgba(74, 222, 128, 0.3);
   background: var(--bg-hover);
   color: inherit;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(74, 222, 128, 0.07);
 }
 
 .pillar-card.business { border-left: 3px solid var(--accent-gold); }
