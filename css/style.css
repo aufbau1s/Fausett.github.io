@@ -340,8 +340,9 @@ a.card:hover .card-arrow {
 .pillar-card-title {
   font-family: var(--font-mono);
   font-size: 0.82rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 .pillar-card-desc {
