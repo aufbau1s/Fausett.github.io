@@ -93,11 +93,10 @@
         <h2>// How I Got Here</h2>
       </div>
       <p style="color:var(--text-muted); margin-bottom:1rem;">
-        I arrived at the University of Utah as a freshman studying physics, with a loose interest in medical physics as a way to keep doors to medical school open. Early on, I did cold outreach to research labs on campus looking for something to work on. I ended up connecting with Dr. Dennis Parker's lab at the
-        <strong>Utah Center for Advanced Imaging Research (UCAIR)</strong> — and hit it off with Dr. Parker right away.
+        My freshman year at the University of Utah I was studying physics and doing cold outreach to research labs looking for something to work on. I ended up at Dr. Dennis Parker's lab at the <strong>Utah Center for Advanced Imaging Research (UCAIR)</strong>, hit it off with him, and started working there toward the end of that first year. I was 18.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        I was 18, it was the end of my freshman year, and I thought it was genuinely interesting that physics could apply to something as concrete as medical treatment. The work felt like a natural extension of what I was already curious about — I just hadn't expected to find it that fast.
+        I was loosely interested in medical physics as a way to keep options open toward medical school. What I didn't expect was to find the research itself genuinely interesting. Physics applying to something as concrete as treatment outcomes made sense to me in a way that pure coursework hadn't yet.
       </p>
 
       <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
@@ -108,16 +107,16 @@
         <h2>// The Problem We Were Solving</h2>
       </div>
       <p style="color:var(--text-muted); margin-bottom:1rem;">
-        A <strong>tissue-mimicking phantom</strong> is exactly what it sounds like: a synthetic stand-in for human tissue that behaves similarly enough that you can test research protocols on it without running experiments on people. If you want to develop or validate a new imaging technique, you need something to image — and you can't just use patients every time you tweak a parameter.
+        A <strong>tissue-mimicking phantom</strong> is a synthetic stand-in for human tissue that behaves similarly enough that you can test research protocols on it without running experiments on people. If you want to develop or validate a new imaging technique, you need something to image and you can't use patients every time you tweak a parameter.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1rem;">
-        The specific challenge we were working on was building a phantom that works for <em>both</em> MRI and ultrasound simultaneously. That sounds simple, but it isn't. Gelatin alone is great for MRI — it has tissue-like relaxation properties — but it's nearly invisible to ultrasound because it doesn't scatter sound waves the way real tissue does. Psyllium husk (yes, the fiber supplement) had been used in low-resource settings to train doctors in underprivileged countries using cheap materials. When I dug into the source literature, it seemed like a logical candidate to add acoustic scattering to gelatin without completely wrecking the MRI signal.
+        The challenge we were working on was building a phantom that works for <em>both</em> MRI and ultrasound simultaneously. Gelatin alone is great for MRI (tissue-like relaxation properties) but nearly invisible to ultrasound because it doesn't scatter sound waves the way real tissue does. Psyllium husk had been used in low-resource settings to train doctors using cheap materials. When I dug into the source literature it seemed like a logical candidate to add acoustic scattering to gelatin without wrecking the MRI signal.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1rem;">
-        The two big unknowns going in: would the psyllium husk introduce too much noise into the MRI, and would it create air pockets in the phantom that would corrupt both modalities? Those were the questions we were trying to answer.
+        The two unknowns going in: would the psyllium husk introduce too much noise into the MRI, and would it create air pockets that would corrupt both modalities.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        The clinical stakes were real and we were aware of them. HIFU — high-intensity focused ultrasound — is a non-invasive treatment used for things like essential tremor, uterine fibroids, and prostate cancer. The problem is that MR-guided HIFU is expensive. The goal of our work was to help identify a path toward ultrasound-guided HIFU as a lower-cost alternative. For something like breast cancer treatment, the cost difference matters enormously — especially when the clinical outcomes between invasive and non-invasive approaches are already close.
+        The clinical stakes were real and we were aware of them. HIFU (high-intensity focused ultrasound) is a non-invasive treatment used for essential tremor, uterine fibroids, and prostate cancer. MR-guided HIFU is expensive. The goal was to help identify a path toward ultrasound-guided HIFU as a lower-cost alternative. For breast cancer treatment specifically, the cost difference matters a lot when clinical outcomes between invasive and non-invasive approaches are already close.
       </p>
 
       <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
@@ -131,10 +130,10 @@
         The first phase was design: figuring out the phantom recipes and building a testing methodology to determine the right concentration range for psyllium husk. After a few test runs to confirm the basic idea would work, we bulk-mixed a full set of phantoms at nine different concentrations and ran them through both imaging modalities.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1rem;">
-        My technical work covered the ultrasound data collection and the MATLAB analysis pipeline — writing analysis scripts from scratch, processing the raw scan data, and generating the figures. The US measurements included B-mode imaging, acoustic attenuation and speed-of-sound via through-transmission at four frequencies (0.6, 1.0, 1.8, and 3.0 MHz), and shear-wave speed measurements for stiffness characterization. The MRI acquisitions (T1, T2, T2* maps, gradient-recalled echo images) were handled by other members of the team.
+        My technical work covered the ultrasound data collection and the MATLAB analysis pipeline: writing scripts from scratch, processing raw scan data, and generating the figures. The US measurements included B-mode imaging, acoustic attenuation and speed-of-sound via through-transmission at four frequencies (0.6, 1.0, 1.8, and 3.0 MHz), and shear-wave speed measurements for stiffness characterization. The MRI acquisitions were handled by other members of the team.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1rem;">
-        I wrote the entire first draft of the manuscript — Introduction, Methods, Results, and Discussion — with the exception of the MRI-specific sections. The process was largely self-guided. The lab director had a health issue and was out for a significant stretch, so it was mostly me working through the structure with Dr. Hofstetter's guidance, gathering the background literature, and getting it done. That meant sourcing and synthesizing the relevant prior work on tissue-mimicking phantoms, HIFU treatment monitoring, and dual-modality imaging myself.
+        I wrote the entire first draft of the manuscript (Introduction, Methods, Results, and Discussion) with the exception of the MRI-specific sections. The process was largely self-guided. The lab director had a health issue and was out for a significant stretch, so it was mostly me working through the structure with Dr. Hofstetter's guidance, gathering the background literature, and getting it done. That meant sourcing and synthesizing the relevant prior work on tissue-mimicking phantoms, HIFU treatment monitoring, and dual-modality imaging myself.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1.5rem;">
         It was my first time writing a scientific paper. I left the university before the paper was published, but the work was complete.
@@ -148,16 +147,16 @@
         <h2>// What We Found</h2>
       </div>
       <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        The core tradeoff turned out to be exactly what we suspected: <strong>more psyllium husk makes the phantom more visible to ultrasound, but harder to image with MRI.</strong> Ultrasound echogenicity increased steadily with concentration — the phantom went from nearly invisible to clearly tissue-like as we added more husk. At the same time, gradient-recalled echo MRI image quality degraded at higher concentrations, as the husk introduced susceptibility effects that distorted the signal.
+        The core tradeoff was exactly what we suspected: <strong>more psyllium husk makes the phantom more visible to ultrasound, but harder to image with MRI.</strong> Ultrasound echogenicity increased steadily with concentration. At the same time, gradient-recalled echo MRI image quality degraded at higher concentrations as the husk introduced susceptibility effects that distorted the signal.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1rem;">
-        What was notable — and practically useful — is how <em>stable</em> the acoustic properties were across all nine concentrations. Speed of sound stayed tightly between 1567–1569 m/s regardless of husk content, and attenuation ranged only from 0.42–0.44 dB/(cm·MHz). This means the concentration can be tuned for the imaging tradeoff without worrying that you're also changing the fundamental acoustic behavior of the phantom.
+        What was practically useful is how <em>stable</em> the acoustic properties were across all nine concentrations. Speed of sound stayed between 1567 and 1569 m/s regardless of husk content, and attenuation ranged from 0.42 to 0.44 dB/(cm·MHz). Concentration can be tuned for the imaging tradeoff without changing the fundamental acoustic behavior of the phantom.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1rem;">
-        The MR relaxation times (T1, T2, T2*) were also tissue-like across the board. T1 ranged from 974–1051 ms and T2 from 97–108 ms — both consistent with soft tissue values. T2* showed the clearest concentration-dependent drop, which is the expected signature of the susceptibility effects from the husk particles.
+        MR relaxation times (T1, T2, T2*) were tissue-like across the board. T1 ranged from 974 to 1051 ms and T2 from 97 to 108 ms, both consistent with soft tissue values. T2* showed the clearest concentration-dependent drop, the expected signature of susceptibility effects from the husk particles.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        Phantom stiffness — measured using ultrasound shear-wave speed — increased with age and decreased with temperature. This is important for HIFU research specifically, since thermal effects on tissue mechanical properties are part of what you're trying to monitor during treatment. The phantom behaves predictably in that regime.
+        Phantom stiffness, measured using ultrasound shear-wave speed, increased with age and decreased with temperature. This matters for HIFU research since thermal effects on tissue mechanical properties are part of what you're monitoring during treatment. The phantom behaves predictably in that regime.
       </p>
 
       <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
@@ -168,10 +167,10 @@
         <h2>// What I Took Away</h2>
       </div>
       <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        This was my first real exposure to what research actually looks like from the inside — not a textbook problem with a known answer, but a question nobody had answered yet. The process of designing the experimental methodology, running the phantoms, building the analysis pipeline in MATLAB, and then translating all of it into a manuscript that had to survive peer review was a different kind of work than anything I'd done in coursework.
+        This was my first real exposure to what research looks like from the inside: a question with no known answer, a methodology you have to design yourself, and a manuscript that has to survive peer review. It was a different kind of work than coursework.
       </p>
       <p style="color:var(--text-muted); margin-bottom:1rem;">
-        The paper has been cited over a dozen times since publication and has shown up in reviews of tissue-mimicking materials for MRI. The phantom design itself is genuinely useful — it's easy to manufacture, uses cheap off-the-shelf materials, and solves a real problem for labs that need to compare MR and US imaging protocols side by side.
+        The paper has been cited over a dozen times since publication and has shown up in reviews of tissue-mimicking materials for MRI. The phantom is easy to manufacture, uses cheap off-the-shelf materials, and solves a real problem for labs comparing MR and US imaging protocols.
       </p>
 
 
