@@ -1,4 +1,4 @@
-# Lewis Fausett — Personal Portfolio Site
+# Patrick Adair — Personal Portfolio Site
 
 A personal portfolio and project directory. Built with plain HTML/CSS, no frameworks, no build step. Hosted on GitHub Pages.
 

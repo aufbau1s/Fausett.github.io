@@ -83,7 +83,7 @@
       <div class="now-box" style="border-color: var(--accent-gold); margin-bottom: 2rem;">
         <p style="font-family:'Space Mono',monospace; font-size:0.72rem; color:var(--accent-gold); margin-bottom:0.5rem;">⚠ WRITE-UP IN PROGRESS</p>
         <p style="color:var(--text-muted); font-size:0.9rem;">
-          Sections 1–3 are partially written. Sections 4–5 are scaffolded and waiting to be filled in.
+          Sections 1–4 are written. Section 5 has one personal reflection placeholder remaining.
         </p>
       </div>
 
@@ -146,7 +146,16 @@
         <h2>// What We Found</h2>
       </div>
       <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        <em style="color:var(--text-dim);">[WIP — Summarize the key results in plain language: echogenicity increases with psyllium husk concentration, MR image quality decreases at higher concentrations, consistent acoustic properties across all phantoms (speed of sound ~1567–1569 m/s, attenuation ~0.42–0.44 dB/cm·MHz), and stiffness changes with age and temperature. What does this mean practically — what concentration is the sweet spot?]</em>
+        The core tradeoff turned out to be exactly what we suspected: <strong>more psyllium husk makes the phantom more visible to ultrasound, but harder to image with MRI.</strong> Ultrasound echogenicity increased steadily with concentration — the phantom went from nearly invisible to clearly tissue-like as we added more husk. At the same time, gradient-recalled echo MRI image quality degraded at higher concentrations, as the husk introduced susceptibility effects that distorted the signal.
+      </p>
+      <p style="color:var(--text-muted); margin-bottom:1rem;">
+        What was notable — and practically useful — is how <em>stable</em> the acoustic properties were across all nine concentrations. Speed of sound stayed tightly between 1567–1569 m/s regardless of husk content, and attenuation ranged only from 0.42–0.44 dB/(cm·MHz). This means the concentration can be tuned for the imaging tradeoff without worrying that you're also changing the fundamental acoustic behavior of the phantom.
+      </p>
+      <p style="color:var(--text-muted); margin-bottom:1rem;">
+        The MR relaxation times (T1, T2, T2*) were also tissue-like across the board. T1 ranged from 974–1051 ms and T2 from 97–108 ms — both consistent with soft tissue values. T2* showed the clearest concentration-dependent drop, which is the expected signature of the susceptibility effects from the husk particles.
+      </p>
+      <p style="color:var(--text-muted); margin-bottom:1.5rem;">
+        Phantom stiffness — measured using ultrasound shear-wave speed — increased with age and decreased with temperature. This is important for HIFU research specifically, since thermal effects on tissue mechanical properties are part of what you're trying to monitor during treatment. The phantom behaves predictably in that regime.
       </p>
 
       <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
@@ -157,7 +166,13 @@
         <h2>// What I Took Away</h2>
       </div>
       <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        <em style="color:var(--text-dim);">[WIP — Reflect on the experience: what did you learn technically and about research as a process? How did this shape your thinking about physics, math, and computation? And what does it mean to you now, coming back to academia with this on your record?]</em>
+        This was my first real exposure to what research actually looks like from the inside — not a textbook problem with a known answer, but a question nobody had answered yet. The process of designing the experimental methodology, running the phantoms, building the analysis pipeline in MATLAB, and then translating all of it into a manuscript that had to survive peer review was a different kind of work than anything I'd done in coursework.
+      </p>
+      <p style="color:var(--text-muted); margin-bottom:1rem;">
+        The paper has been cited over a dozen times since publication and has shown up in reviews of tissue-mimicking materials for MRI. The phantom design itself is genuinely useful — it's easy to manufacture, uses cheap off-the-shelf materials, and solves a real problem for labs that need to compare MR and US imaging protocols side by side.
+      </p>
+      <p style="color:var(--text-muted); margin-bottom:1.5rem;">
+        Coming back to academia now, years later, with a company built and run in between — this paper is a reminder that the research instinct was always there. It just took a detour through building something from scratch before I came back to it. <em style="color:var(--text-dim);">[Add personal reflection here when ready.]</em>
       </p>
 
       <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
