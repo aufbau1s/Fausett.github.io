@@ -386,6 +386,76 @@ details p {
   margin: 0;
 }
 
+/* ── Topic row ────────────────────────────────────────────── */
+.topic-row {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  letter-spacing: 0.03em;
+  margin-top: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* ── Question list ─────────────────────────────────────────── */
+.question-list {
+  list-style: none;
+  counter-reset: q;
+  margin-top: 0.5rem;
+}
+
+.question-list li {
+  counter-increment: q;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.65;
+  padding: 0.55rem 0;
+  padding-left: 1.75rem;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+
+.question-list li:first-child { border-top: 1px solid var(--border); }
+
+.question-list li::before {
+  content: counter(q);
+  position: absolute;
+  left: 0;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  top: 0.7rem;
+}
+
+/* ── Thread list ───────────────────────────────────────────── */
+.thread-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.thread-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.thread-title:hover { color: var(--accent); }
+
+.thread-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .thread-list { grid-template-columns: 1fr; gap: 1.1rem; }
+}
+
 /* ── Footer ────────────────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--border);
@@ -423,4 +493,90 @@ code {
   .dated-list li { flex-direction: column; gap: 0.2rem; }
   .dated-list .entry-date { min-width: unset; }
   main { padding: 2.5rem 0 4rem; }
+}
+
+/* ── Reading list ──────────────────────────────────────────── */
+.reading-list {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.reading-list li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.reading-list li:first-child { border-top: 1px solid var(--border); }
+
+.read-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  display: block;
+}
+
+a.read-title:hover { color: var(--accent); }
+
+.read-author {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  display: block;
+  margin-top: 0.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.read-note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Project list (work page) ──────────────────────────────── */
+.project-list {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.project-list li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.project-list li:first-child { border-top: 1px solid var(--border); }
+
+.proj-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+a.proj-title:hover { color: var(--accent); }
+
+.proj-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0 0 0.35rem 0;
+}
+
+.proj-status {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  text-transform: lowercase;
+}
+
+/* ── Entry desc (notes page) ───────────────────────────────── */
+.entry-desc {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin: 0.15rem 0 0 0;
+  line-height: 1.5;
 }

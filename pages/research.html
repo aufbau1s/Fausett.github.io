@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Physics, Math &amp; ML — Lewis Fausett</title>
-  <meta name="description" content="Lewis Fausett's research and projects in applied mathematics, machine learning, and mathematical interpretability." />
+  <title>Research — Lewis Fausett</title>
+  <meta name="description" content="Applied mathematics, mechanistic interpretability, and earlier research in medical imaging." />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <div class="container nav-inner">
-      <a href="../index.html" class="nav-logo">LF<span>.</span>dev</a>
+      <a href="../index.html" class="nav-logo">LF<span>.</span></a>
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="business.html">Business</a></li>
-        <li><a href="research.html" class="active">Research</a></li>
-        <li><a href="thoughts.html">Thoughts</a></li>
+        <li><a href="../index.html">home</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="research.html" class="active">research</a></li>
+        <li><a href="notes.html">notes</a></li>
+        <li><a href="reading.html">reading</a></li>
       </ul>
     </div>
   </nav>
@@ -25,245 +25,111 @@
   <main>
     <div class="container">
 
-      <!-- PAGE HEADER -->
-      <section class="hero" style="padding-bottom:1rem;">
-        <div class="hero-tag">&gt; PILLAR_02 :: PHYSICS · MATH · ML</div>
-        <h1>Physics, Math &amp; ML</h1>
-        <p class="hero-desc">
-          My "side quest" — a degree in applied mathematics at Columbia,
-          and a growing body of work at the interface of mathematics and machine learning
-          interpretability. This page is structured like a research directory.
+      <section>
+        <h1>Research</h1>
+        <p>
+          I'm studying applied mathematics at Columbia and using this page to collect coursework notes,
+          reading notes, and small experiments related to machine learning and interpretability.
         </p>
-        <div class="status-bar pixel-border" style="margin-top:1.5rem;">
-          <div class="stat">
-            <span class="stat-label">Institution</span>
-            <span class="stat-value">Columbia University</span>
-          </div>
-          <div class="stat">
-            <span class="stat-label">Degree</span>
-            <span class="stat-value">B.S. Applied Mathematics</span>
-          </div>
-          <div class="stat">
-            <span class="stat-label">Research Interest</span>
-            <span class="stat-value">ML Interpretability · Math</span>
-          </div>
-          <div class="stat">
-            <span class="stat-label">Status</span>
-            <span class="stat-value" style="color:var(--accent-green);">In Progress</span>
-          </div>
+        <p>
+          I'm early in this path, so some pages are explanations to myself rather than polished research.
+        </p>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Current Interests -->
+      <section>
+        <h2>Current interests</h2>
+        <ul class="project-list">
+          <li>
+            <span class="proj-title">Mechanistic interpretability</span>
+            <p class="proj-desc">How neural networks represent features, circuits, and structure. Working through the Anthropic interpretability sequence and related papers.</p>
+            <span class="proj-status">active</span>
+          </li>
+          <li>
+            <span class="proj-title">Applied mathematics</span>
+            <p class="proj-desc">Linear algebra, analysis, numerical methods, optimization, and probability. Course notes and small problems from my work at Columbia.</p>
+            <span class="proj-status">active</span>
+          </li>
+          <li>
+            <span class="proj-title">Medical imaging</span>
+            <p class="proj-desc">Earlier undergraduate research in ultrasound and MRI tissue-mimicking phantoms at UCAIR, University of Utah. Led to a peer-reviewed publication in 2020.</p>
+            <span class="proj-status">2016 — 2018</span>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- Publication -->
+      <section>
+        <h2>Publication</h2>
+        <div class="pub-block">
+          <a href="projects/pub-psyllium-phantom.html" style="text-decoration: none;">
+            <p class="pub-title">
+              Development and Characterization of a Tissue Mimicking Psyllium Husk Gelatin Phantom
+              for Ultrasound and Magnetic Resonance Imaging
+            </p>
+          </a>
+          <p class="pub-meta">
+            <em>International Journal of Hyperthermia</em>, 37(1):283–290, 2020
+            &nbsp;&middot;&nbsp;
+            <a href="https://doi.org/10.1080/02656736.2020.1739345" target="_blank" rel="noopener">doi:10.1080/02656736.2020.1739345</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://pubmed.ncbi.nlm.nih.gov/32204632/" target="_blank" rel="noopener">PubMed</a>
+          </p>
+          <p class="pub-contrib">
+            Hofstetter LW, <strong>Fausett L</strong>, Mueller A, Od&eacute;en H, Payne A, Christensen DA, Parker DL.
+            My contribution: experimental execution, ultrasound data collection, MATLAB analysis, and manuscript writing.
+          </p>
+          <details>
+            <summary>abstract</summary>
+            <p>
+              Purpose: To develop and characterize a tissue-mimicking phantom suitable for both ultrasound (US)
+              and magnetic resonance imaging (MRI) using psyllium husk as an ultrasound scatterer in a gelatin matrix.
+              Methods: Nine psyllium husk concentrations (0–4% w/v) were tested across four ultrasound frequencies.
+              MRI relaxometry (T1, T2) and acoustic property measurements (speed of sound, attenuation) were performed.
+              Results: Echogenicity increased with psyllium concentration while MRI quality degraded at higher concentrations.
+              Acoustic properties remained consistent across all concentrations. A 1–2% psyllium concentration
+              provided an effective balance for dual-modality imaging.
+              Conclusion: Psyllium husk gelatin phantoms offer a low-cost, reproducible option for combined US/MRI
+              research applications, including HIFU treatment planning and validation.
+            </p>
+          </details>
         </div>
       </section>
 
-      <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
+      <hr class="divider" />
 
-      <!-- PUBLICATIONS -->
-      <div class="section-header">
-        <span class="section-icon">📄</span>
-        <h2>// Publications</h2>
-      </div>
-
-      <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        Peer-reviewed research contributions. This work predates my current degree program —
-        it came out of a summer undergraduate research project at the
-        <strong>Utah Center for Advanced Imaging Research (UCAIR)</strong>, University of Utah,
-        where I worked under Dr. Lorne Hofstetter on medical imaging phantoms.
-      </p>
-
-      <!-- Publication card — clickable -->
-      <a href="projects/pub-psyllium-phantom.html" style="text-decoration:none; display:block;">
-        <div style="background:var(--bg-card); border:2px solid var(--border); border-left:4px solid var(--accent-blue); padding:1.5rem; margin-bottom:1.5rem; transition: background 0.2s, border-color 0.2s;" onmouseover="this.style.background='var(--bg-card-hover)'; this.style.borderColor='var(--accent-blue)';" onmouseout="this.style.background='var(--bg-card)'; this.style.borderColor='var(--border)';">
-
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.75rem;">
-            <span style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--accent-blue); border:1px solid var(--accent-blue); padding:0.1rem 0.5rem;">PEER-REVIEWED</span>
-            <span style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--text-dim);">2020 · Click to read write-up ↗</span>
-          </div>
-
-          <p style="font-family:'JetBrains Mono',monospace; font-size:0.6rem; line-height:1.8; color:var(--text-primary); margin-bottom:1rem;">
-            Development and Characterization of a Tissue Mimicking Psyllium Husk Gelatin Phantom for Ultrasound and Magnetic Resonance Imaging
-          </p>
-
-          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0.75rem;">
-            Hofstetter LW, <strong style="color:var(--accent-gold);">Fausett L</strong>, Mueller A, Odéen H, Payne A, Christensen DA, Parker DL.
-          </p>
-
-          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">
-            <em>International Journal of Hyperthermia</em>, 2020; 37(1):283–290.
-            DOI: <span style="color:var(--accent-blue);">10.1080/02656736.2020.1739345</span>
-            &nbsp;·&nbsp;
-            <span style="color:var(--accent-blue);">PubMed ↗</span>
-          </p>
-
-          <details style="cursor:pointer;" onclick="event.stopPropagation();">
-            <summary style="font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--text-dim); margin-bottom:0.75rem;">Abstract ▾</summary>
-            <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.75rem; border-left:2px solid var(--border-bright); padding-left:1rem;">
-              <strong>Purpose:</strong> To develop and characterize a tissue-mimicking phantom that enables the direct comparison of magnetic resonance (MR) and ultrasound (US) imaging techniques useful for monitoring high-intensity focused ultrasound (HIFU) treatments. With no additions, gelatin phantoms produce little if any scattering required for US imaging. This study characterizes the MR and US image characteristics as a function of psyllium husk concentration, which was added to increase US scattering.
-              <br/><br/>
-              <strong>Methods:</strong> Gelatin phantoms were constructed with varying concentrations of psyllium husk. The effects of psyllium husk concentration on US B-mode and MR imaging were evaluated at nine different concentrations. T1, T2, and T2* MR maps were acquired. Acoustic properties (attenuation and speed of sound) were measured at frequencies of 0.6, 1.0, 1.8, and 3.0 MHz.
-              <br/><br/>
-              <strong>Conclusions:</strong> The presented dual-use tissue-mimicking phantom is easy to manufacture and can be used to compare and evaluate US-guided and MR-guided HIFU imaging protocols.
-            </p>
-          </details>
-
-          <div style="margin-top:1rem; padding-top:0.75rem; border-top:1px solid var(--border);">
-            <p style="font-family:'JetBrains Mono',monospace; font-size:0.65rem; color:var(--text-dim); margin-bottom:0.4rem;">MY CONTRIBUTIONS</p>
-            <p style="font-size:0.85rem; color:var(--text-muted);">
-              Experimental execution, ultrasound data collection, computational analysis in MATLAB,
-              and primary author on significant portions of the manuscript. Work conducted as an
-              undergraduate researcher at UCAIR under Dr. Lorne Hofstetter (now CEO, 4D Surgical).
-            </p>
-          </div>
-
-        </div>
-      </a>
-
-      <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
-
-      <!-- ML & INTERPRETABILITY PROJECTS -->
-      <div class="section-header">
-        <span class="section-icon">🧠</span>
-        <h2>// ML &amp; Interpretability Projects</h2>
-      </div>
-
-      <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        My primary research interest is <strong>mechanistic interpretability</strong> — understanding
-        what neural networks actually compute, not just what they output. I approach this through
-        the lens of mathematics, looking for clean structural explanations of learned representations.
-      </p>
-
-      <div class="project-grid">
-
-        <div class="project-card">
-          <div class="project-card-header">
-            <span class="project-title">Project — [WIP]</span>
-            <span class="badge badge-wip">WIP</span>
-          </div>
-          <p class="project-desc">
-            <em style="color:var(--text-dim);">[Describe your first interpretability project here. What model? What question are you trying to answer? What methods are you using?]</em>
-          </p>
-          <div class="project-tags">
-            <span class="tag">Interpretability</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">Math</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-header">
-            <span class="project-title">Research Notes — [WIP]</span>
-            <span class="badge badge-research">RESEARCH</span>
-          </div>
-          <p class="project-desc">
-            <em style="color:var(--text-dim);">[Link to or summarize a set of reading notes on a paper or concept you've been working through — e.g., superposition, circuits, etc.]</em>
-          </p>
-          <div class="project-tags">
-            <span class="tag">Notes</span>
-            <span class="tag">Literature</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-header">
-            <span class="project-title">Math Exploration — [WIP]</span>
-            <span class="badge badge-wip">WIP</span>
-          </div>
-          <p class="project-desc">
-            <em style="color:var(--text-dim);">[Add a mathematical exploration or derivation you've been working on — e.g., a linear algebra result, a geometry of representations, etc.]</em>
-          </p>
-          <div class="project-tags">
-            <span class="tag">Linear Algebra</span>
-            <span class="tag">Analysis</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
-
-      <!-- COMPUTATIONAL PHYSICS -->
-      <div class="section-header">
-        <span class="section-icon">⚛️</span>
-        <h2>// Applied Mathematics</h2>
-      </div>
-
-      <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        Coursework and projects from my B.S. in Applied Mathematics at Columbia.
-        Includes numerical methods, simulations, and the mathematical foundations underneath them.
-      </p>
-
-      <div class="project-grid">
-
-        <div class="project-card">
-          <div class="project-card-header">
-            <span class="project-title">Numerical Methods — [WIP]</span>
-            <span class="badge badge-active">ACTIVE</span>
-          </div>
-          <p class="project-desc">
-            <em style="color:var(--text-dim);">[Add a project or write-up from a numerical methods course — ODE solvers, integration schemes, etc.]</em>
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Numerics</span>
-            <span class="tag">ODEs</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-header">
-            <span class="project-title">Simulation Project — [WIP]</span>
-            <span class="badge badge-wip">WIP</span>
-          </div>
-          <p class="project-desc">
-            <em style="color:var(--text-dim);">[Add a simulation project — N-body, wave equations, Monte Carlo, etc.]</em>
-          </p>
-          <div class="project-tags">
-            <span class="tag">Simulation</span>
-            <span class="tag">Physics</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-header">
-            <span class="project-title">Coursework Highlights — [WIP]</span>
-            <span class="badge badge-active">ACTIVE</span>
-          </div>
-          <p class="project-desc">
-            <em style="color:var(--text-dim);">[List notable courses, professors, or topics that have been most interesting or relevant to your broader work.]</em>
-          </p>
-          <div class="project-tags">
-            <span class="tag">Coursework</span>
-            <span class="tag">Columbia</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="pixel-divider">· · · · · · · · · · · · · · · · ·</div>
-
-      <!-- READING LIST / RESOURCES -->
-      <div class="section-header">
-        <span class="section-icon">📚</span>
-        <h2>// Papers &amp; Resources</h2>
-      </div>
-
-      <p style="color:var(--text-muted); margin-bottom:1.5rem;">
-        Papers, textbooks, and resources I've found most useful or interesting.
-        <em style="color:var(--text-dim);">[Populate as you go — even a short annotated list is valuable.]</em>
-      </p>
-
-      <div class="post-list">
-        <a href="#" class="post-item">
-          <span class="post-date">Paper</span>
-          <span class="post-title">[WIP] — Add a paper title and link here</span>
-        </a>
-        <a href="#" class="post-item">
-          <span class="post-date">Book</span>
-          <span class="post-title">[WIP] — Add a textbook or resource here</span>
-        </a>
-        <a href="#" class="post-item">
-          <span class="post-date">Blog</span>
-          <span class="post-title">[WIP] — Add a blog post or article here</span>
-        </a>
-      </div>
+      <!-- Reading -->
+      <section>
+        <h2>Reading</h2>
+        <p>
+          Papers and books I'm working through in this area. Full annotated list on the
+          <a href="reading.html">reading page</a>.
+        </p>
+        <ul class="dated-list" style="margin-top: 0.75rem;">
+          <li>
+            <span class="entry-date">Anthropic</span>
+            <div>
+              <a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html" target="_blank" rel="noopener" class="entry-title">In-context Learning and Induction Heads</a>
+            </div>
+          </li>
+          <li>
+            <span class="entry-date">Anthropic</span>
+            <div>
+              <a href="https://transformer-circuits.pub/2022/toy_model/index.html" target="_blank" rel="noopener" class="entry-title">Toy Models of Superposition</a>
+            </div>
+          </li>
+          <li>
+            <span class="entry-date">Axler</span>
+            <div>
+              <span class="entry-title">Linear Algebra Done Right</span>
+            </div>
+          </li>
+        </ul>
+      </section>
 
     </div>
   </main>
@@ -271,12 +137,10 @@
   <footer>
     <div class="container">
       <p>
-        Lewis Fausett &nbsp;·&nbsp;
-        <a href="mailto:lewis@patrickadairdesigns.com">Email</a> &nbsp;·&nbsp;
-        <a href="https://github.com/aufbau1s" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp;
-        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        Lewis Fausett &nbsp;&middot;&nbsp;
+        <a href="mailto:lewis@patrickadairdesigns.com">email</a> &nbsp;&middot;&nbsp;
+        <a href="https://github.com/aufbau1s" target="_blank" rel="noopener">github</a>
       </p>
-      <p style="margin-top:0.5rem;"><span class="blink">█</span> &nbsp; Built with plain HTML/CSS · Hosted on GitHub Pages</p>
     </div>
   </footer>
 
