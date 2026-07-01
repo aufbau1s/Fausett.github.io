@@ -580,3 +580,39 @@ a.proj-title:hover { color: var(--accent); }
   margin: 0.15rem 0 0 0;
   line-height: 1.5;
 }
+
+/* ── Data table ─────────────────────────────────────────────── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.data-table th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-dark);
+  padding: 0.5rem 0.75rem 0.5rem 0;
+}
+
+.data-table td {
+  padding: 0.55rem 0.75rem 0.55rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: top;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table td:not(:first-child),
+.data-table th:not(:first-child) {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
