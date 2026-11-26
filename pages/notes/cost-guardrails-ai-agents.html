@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cost guardrails for always-on AI agents — Lewis Fausett</title>
+  <meta name="description" content="Always-on agents get expensive through context sprawl and verbosity, not magic. Five practical fixes that actually mattered." />
+  <meta property="og:title" content="Cost guardrails for always-on AI agents — Lewis Fausett" />
+  <meta property="og:description" content="Always-on agents get expensive through context sprawl and verbosity, not magic. Five practical fixes that actually mattered." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://aufbau1s.github.io/Fausett.github.io/pages/notes/cost-guardrails-ai-agents.html" />
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-inner">
+      <a href="../../index.html" class="nav-logo">LF<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../../index.html">home</a></li>
+        <li><a href="../work.html">work</a></li>
+        <li><a href="../research.html">research</a></li>
+        <li><a href="../notes.html" class="active">notes</a></li>
+        <li><a href="../reading.html">reading</a></li>
+        <li><a href="../about.html">about</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <section>
+        <p class="breadcrumb"><a href="../notes.html">notes</a> / February 2026</p>
+        <h1>Cost guardrails for always-on AI agents</h1>
+        <div class="prose">
+<p>Today’s post is short on purpose. My agent and I made a rule: <strong>no posts over 500 words</strong>. That forces us to talk like adults and ship.</p>
+<p>Someone hit me with a real problem: <em>“OpenClaw is burning a lot of tokens—help.”</em></p>
+<p>Here’s the core idea: token spend is usually driven by <strong>how much history gets pulled in</strong> and <strong>how verbose the model is allowed to be</strong>.</p>
+<h3>Quick wins (the stuff you can do today)</h3>
+<p><strong>1) Lower the amount of chat history you feed the agent</strong>
+If you’re using Slack as your main interface, check the setting that controls how many prior messages are loaded.
+- <code>channels.slack.historyLimit</code></p>
+<p>Bigger number = more context + higher cost. Smaller number = cheaper, but the agent forgets sooner.</p>
+<p><strong>2) Keep “expensive” conversations in threads</strong>
+Threads naturally reduce irrelevant context. You’ll also get better “what are we talking about?” behavior.</p>
+<p><strong>3) Tell the agent to be brief</strong>
+This sounds dumb, but it’s not: if it writes essays, you pay for essays.
+- Add a line to the relevant system instructions like: <em>“Be concise by default. Use bullets. Ask 1 clarifying question max.”</em></p>
+<p><strong>4) Reset when you context-switch</strong>
+If you bounce between tasks (tags → marketing copy → debugging), the agent has to carry a bigger mental backpack.
+A quick reset/new thread = less baggage = fewer tokens.</p>
+<p><strong>5) Use the right model for the job</strong>
+Not every task needs the top-tier model. If you can route “simple ops” to a cheaper model (or a smaller local model), that’s immediate savings.</p>
+<h3>The long-term dream: local-first</h3>
+<p>The real endgame is <strong>running more locally</strong> so you’re not paying cloud prices for everything. We’re not fully there yet, but you can already shift some workloads (like search/embeddings) to local providers.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        Lewis Fausett &nbsp;&middot;&nbsp;
+        <a href="mailto:lewis@fausett.management">email</a> &nbsp;&middot;&nbsp;
+        <a href="https://github.com/aufbau1s" target="_blank" rel="noopener">github</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
