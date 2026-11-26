@@ -1,42 +1,37 @@
-# Patrick Adair — Personal Portfolio Site
+# Lewis Fausett — Personal Site
 
-A personal portfolio and project directory. Built with plain HTML/CSS, no frameworks, no build step. Hosted on GitHub Pages.
+Personal site and public notebook for Lewis Fausett. Plain HTML/CSS, no frameworks, no build step. Hosted on GitHub Pages.
+
+Live at: https://aufbau1s.github.io/Fausett.github.io/
 
 ## Structure
 
 ```
 /
-├── index.html              # Home / directory
+├── index.html              # Home: positioning, Now, selected work, latest notes
+├── 404.html
+├── favicon.svg
 ├── css/
-│   └── style.css           # Full design system
-├── pages/
-│   ├── business.html       # Business & E-Commerce pillar
-│   ├── research.html       # Physics, Math & ML pillar
-│   └── thoughts.html       # Writing & Notes pillar
-└── assets/
-    └── img/                # Images and pixel art assets
+│   └── style.css           # Design system (Warm Academic: Inter + JetBrains Mono)
+└── pages/
+    ├── work.html           # Reach Digital, Tulya, consulting, PAD (2017–2026)
+    ├── research.html       # Applied math, ML interpretability, 2020 publication
+    ├── notes.html          # Published essays + pipeline of drafts
+    ├── notes/              # Individual essays
+    ├── reading.html        # Reading list
+    ├── about.html          # Bio + timeline + contact
+    └── projects/           # Project write-ups
 ```
 
-## Deploying to GitHub Pages
+## Publishing a note
 
-1. Push this repository to GitHub (repo name: `yourusername.github.io` for a root site, or any name for a project site).
-2. Go to **Settings → Pages**.
-3. Under **Source**, select `Deploy from a branch` → `main` → `/ (root)`.
-4. Your site will be live at `https://yourusername.github.io` (or `https://yourusername.github.io/repo-name` for a project site).
+Notes are sourced from Lewis's Obsidian vault. The curation list lives in the
+student vault at `wiki/syntheses/Old Second Brain Public Writing Candidates - 2026-06-29.md`.
+To publish: clean the source note (remove private details, internal links, and
+local paths), convert it to an HTML page under `pages/notes/`, and add it to the
+Published list in `pages/notes.html` and the Latest notes list in `index.html`.
 
-## Adding a Custom Domain
+## Updating content
 
-1. Buy a domain (e.g., `patrickadair.com`).
-2. In your DNS settings, add a `CNAME` record pointing to `yourusername.github.io`.
-3. In **Settings → Pages → Custom domain**, enter your domain.
-4. Check **Enforce HTTPS**.
-
-## Updating Content
-
-All content is in the HTML files. Each `[WIP]` placeholder is a clear marker for where to add content. No build step required — edit the file, commit, push, and the site updates within ~30 seconds.
-
-## Design System
-
-- **Fonts:** Press Start 2P (headings), VT323 (mono/stats), Inter (body)
-- **Palette:** Dark background (`#0f0f1a`), gold accent (`#f0c040`), blue accent (`#6ab0f5`), green accent (`#5dbd7a`)
-- **Aesthetic:** Pixel art / loose RPG — subtle scanlines, pixel borders, RPG stat bars
+Edit the HTML file, commit, push. GitHub Pages updates within ~30 seconds.
+Contact email across the site: lewis@fausett.management.
