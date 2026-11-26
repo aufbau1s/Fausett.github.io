@@ -9,8 +9,8 @@ Status key: [next] [writing] [with frank] [done]
 
 ## The queue
 
-1. [next] Homepage intro — the positioning statement. Everything else hangs off this.
-2. [ ] About — bio in his voice + timeline check (facts a client/PhD program would verify).
+1. [done] Homepage intro — the positioning statement. Everything else hangs off this.
+2. [next] About — bio in his voice + timeline check (facts a client/PhD program would verify).
 3. [ ] Work — Reach Digital + Tulya sections. Currently Frank-written and thin;
    needs what he actually does there, in his words.
 4. [ ] Project: Google Ads agent — Approach exists as a 3-item list; Results section
