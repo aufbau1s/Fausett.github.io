@@ -18,6 +18,8 @@
   --border:      #e2ddd5;
   --border-dark: #c9c3ba;
   --link:        #2d6a4f;
+  --accent-gold: #b7791f;
+  --accent-purple: #6d5bd0;
 
   --font-body:   'Inter', system-ui, sans-serif;
   --font-mono:   'JetBrains Mono', 'Fira Mono', monospace;
@@ -615,4 +617,42 @@ a.proj-title:hover { color: var(--accent); }
 .data-table th:not(:first-child) {
   font-family: var(--font-mono);
   font-size: 0.85rem;
+}
+
+/* ── Prose (notes essays) ──────────────────────────────────── */
+.prose h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin: 2rem 0 0.6rem;
+}
+.prose h3 { margin-top: 1.5rem; }
+.prose p { margin-bottom: 0.9rem; }
+.prose ul, .prose ol { margin: 0 0 1rem 1.25rem; color: var(--text-muted); font-size: 0.95rem; }
+.prose li { margin-bottom: 0.35rem; }
+.prose blockquote {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-light);
+  padding: 0.75rem 1rem;
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+}
+.prose blockquote p { margin-bottom: 0.4rem; }
+.prose pre {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+.prose pre code { background: none; border: none; padding: 0; }
+.breadcrumb { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); margin-bottom: 1rem; }
+.breadcrumb a { color: var(--text-dim); }
+
+@media (max-width: 600px) {
+  .nav-inner { flex-wrap: wrap; gap: 0.5rem; }
+  .nav-links { flex-wrap: wrap; gap: 0.9rem; }
 }
